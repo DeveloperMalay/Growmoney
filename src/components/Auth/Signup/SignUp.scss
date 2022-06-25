@@ -1,0 +1,151 @@
+*,
+*:focus {
+  outline: none;
+}
+.SignUp {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-base);
+  flex-direction: column;
+
+  .main-header {
+    margin-top: -20px;
+    font-family: var(--font-base);
+    img {
+      height: 100px;
+    }
+
+    // @media screen and (max-width: 600px) {
+    //   color: var(--primary-color);
+    // }
+  }
+  .image {
+    img {
+      width: 30px;
+    }
+  }
+  .form__container {
+    background-color: #fff;
+    padding: 1rem;
+    height: auto;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    header {
+      color: var(--primary-color);
+
+      text-align: center;
+      margin: 0 0 10px 0;
+    }
+    .form-item {
+      position: relative;
+      margin-bottom: 15px;
+      font-family: var(--font-base);
+
+      input {
+        display: block;
+        width: 400px;
+        height: 40px;
+        background: transparent;
+        border: solid 1px #ccc;
+        transition: all 0.2s ease-in-out;
+        padding: 0 15px;
+        border-radius: 6px;
+
+        &:focus {
+          border-color: var(--primary-color);
+        }
+        @media screen and (max-width: 600px) {
+          width: 350px;
+        }
+      }
+
+      label {
+        position: absolute;
+        cursor: text;
+        z-index: 2;
+        top: 50%;
+        left: 10px;
+        font-size: 17px;
+        background: #fff;
+        padding: 0 10px;
+        color: #999;
+        transition: all 0.2s ease-in-out;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+      input:focus + label,
+      input:valid + label {
+        font-size: 12px;
+        top: 0;
+        color: var(--primary-color);
+      }
+      .password-icon {
+        position: absolute;
+        top: 11px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .terms_condition {
+      margin: 5px;
+      width: 25rem;
+      input {
+        margin-right: 4px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 20rem;
+        margin: 0 0 5px 22px;
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      button {
+        color: #fff;
+        background-color: var(--primary-color);
+        border-radius: 20px;
+        padding: 10px;
+        width: 10rem;
+        cursor: pointer;
+        font-size: 15px;
+        border: none;
+      }
+      button:disable {
+        background-color: var(--button-color);
+      }
+    }
+
+    .log-in {
+      display: flex;
+      justify-content: center;
+      color: var(--primary-color);
+      .link {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      width: auto;
+      height: fit-content;
+    }
+  }
+  // @media screen and (max-width: 600px) {
+  //   background-color: #fff;
+  // }
+}

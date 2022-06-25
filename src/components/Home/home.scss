@@ -1,0 +1,120 @@
+.home_container {
+  height: 90vh;
+  width: 100vw;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-base);
+  .home {
+    margin-top: 2rem;
+    width: 50rem;
+    .profile_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 12px;
+      padding-top: 15px;
+      width: 50rem;
+      height: 20rem;
+      .profile_pic {
+        img {
+          width: 12rem;
+        }
+      }
+      .profile_income {
+        display: flex;
+        .today {
+          text-align: center;
+          margin: 10px 10px 20px 10px;
+          h5 {
+            color: #4267b2;
+          }
+        }
+        .weekly {
+          text-align: center;
+          margin: 10px 10px 20px 10px;
+          h5 {
+            color: #4267b2;
+          }
+        }
+      }
+      @media screen and (max-width: 600px) {
+        width: 23rem;
+      }
+    }
+    .daily_income {
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+      .card {
+        margin: 5px;
+      }
+    }
+    .subcriptions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50rem;
+      .subscription_card {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 5px;
+        width: 35rem;
+        .subs_image {
+          margin: 6px 0 0 -21px;
+          img {
+            width: 15rem;
+            @media screen and (max-width: 600px) {
+              width: 11rem;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            margin: 20px 14px 0 5px;
+          }
+        }
+        .subs_details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          span {
+            color: #4267b2;
+          }
+          .subs_btn {
+            height: 27px;
+            width: 75px;
+            background-color: #4267b2;
+            padding: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            span {
+              color: #fff;
+              font-weight: 200;
+            }
+          }
+        }
+        @media screen and (max-width: 600px) {
+          width: 23rem;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    height: 130vh;
+    width: 100%;
+  }
+}
